@@ -9,4 +9,4 @@
 ## 🏆 Desafios
 * [Desafio 05](https://rawandson2323-svg.github.io/estudos-html-css/estudos-html-e-css/desafios/desafio%2005/)
 * [Desafio 10](https://rawandson2323-svg.github.io/estudos-html-css/estudos-html-e-css/desafios/desafio%2010/d010/)
-* [Desafio 012](https://rawandson2323-svg.github.io/estudos-html-css/estudos-html-e-css/desafios/desafio%2010/d012/)
+* [desafio012](https://rawandson2323-svg.github.io/estudos-html-css/estudos-html-e-css/desafios/desafio%2010/d012/)
