@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot {
+            background-color: #373131;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #373131;
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) {
+            background-color:lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color:white;
+        }
+       
+    </style>
+    <!--
+    no lugar de 2n-1 pode usar odd que significa impar ou even que 
+    significa par-->
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table 
+            caption
+            Thead
+                TR,TD,TH
+            Tbody
+                TR,TD,TH
+            Tfoot
+                TR,TD,TH
+                -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <Thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </Thead>
+        
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                
+                 <tr>
+                     <td>Minas Gerais</td>
+                     <td class="num">21 168 791</td>
+                 </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                     <td class="num">17 264 943</td>
+                </tr>
+                                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 891 542</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 228 350</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 558 227</td>
+                </tr>
+
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 263 931</td>
+                </tr>
+
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 777 124</td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 792 844</td>
+                </tr>
+
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 381 163</td>
+                </tr>
+
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 121 399</td>
+                </tr>
+
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 269 995</td>
+                </tr>
+
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 108 508</td>
+                </tr>
+
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">3 974 495</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 784 239</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 561 064</td>
+                </tr>
+
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 322 820</td>
+                </tr>
+
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 269 200</td>
+                </tr>
+
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">3 094 325</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 808 076</td>
+                </tr>
+
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 338 474</td>
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 815 278</td>
+                </tr>
+
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 607 363</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">884 309</td>
+                </tr>
+
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">806 547</td>
+                </tr>
+
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">738 700</td>
+                </tr>
+            </tbody>
+            
+        <Tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+               <td><strong>219 372 945</strong></td>
+            </tr>
+
+        </Tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repudiandae, praesentium deleniti. Voluptatum ducimus 
+        velit veritatis? Veniam fugiat esse alias tempore temporibus
+         pariatur recusandae quo, quasi asperiores, ut repellat 
+         ducimus? Soluta?</p>
+        
+    
+</body>
+</html>

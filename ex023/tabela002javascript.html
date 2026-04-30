@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+#busca {
+    width: 500px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#busca:focus {
+    border-color: #4a90e2;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+td, th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+thead th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+thead th:hover {
+    background-color: #357abd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fb;
+    transition: background-color 0.2s;
+}
+
+tfoot tr {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+td.num {
+    text-align: right;
+}
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table 
+            Thead
+                TR,TD,TH
+            Tbody
+                TR,TD,TH
+            Tfoot
+                TR,TD,TH
+                -->
+    <input type="text" id="busca" placeholder="Buscar estado...">
+
+    <table>
+            <Thead>
+            <tr>
+                <th onclick="ordenarTabela(0)" style="cursor:pointer">Estado ↕</th>
+                <th onclick="ordenarTabela(1)" style="cursor:pointer">População ↕</th>
+            </tr>
+        </Thead>
+        
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                
+                 <tr>
+                     <td>Minas Gerais</td>
+                     <td class="num">21 168 791</td>
+                 </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                     <td class="num">17 264 943</td>
+                </tr>
+                                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 891 542</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 228 350</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 558 227</td>
+                </tr>
+
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 263 931</td>
+                </tr>
+
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 777 124</td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 792 844</td>
+                </tr>
+
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 381 163</td>
+                </tr>
+
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 121 399</td>
+                </tr>
+
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 269 995</td>
+                </tr>
+
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 108 508</td>
+                </tr>
+
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">3 974 495</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 784 239</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 561 064</td>
+                </tr>
+
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 322 820</td>
+                </tr>
+
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 269 200</td>
+                </tr>
+
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">3 094 325</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 808 076</td>
+                </tr>
+
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 338 474</td>
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 815 278</td>
+                </tr>
+
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 607 363</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">884 309</td>
+                </tr>
+
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">806 547</td>
+                </tr>
+
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">738 700</td>
+                </tr>
+                
+            </tbody>
+            
+        <Tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+               <td><strong>219 372 945</strong></td>
+            </tr>
+
+        </Tfoot>
+    </table>
+    <script>
+                    // ─── 1. CALCULAR TOTAL AUTOMATICAMENTE ───────────────────────────────────
+                    function calcularTotal() {
+                        const celulas = document.querySelectorAll("tbody td.num");
+                        let total = 0;
+
+                        celulas.forEach(function(cel) {
+                        const numero = parseInt(cel.textContent.replace(/\s/g, ""));
+                        total += numero;
+                        });
+
+                        const totalFormatado = total.toLocaleString("pt-BR");
+                        document.querySelector("tfoot td strong").textContent = totalFormatado;
+                    }
+
+                    // ─── 2. ORDENAR AO CLICAR NO CABEÇALHO ───────────────────────────────────
+                    let ordemAtual = {}; // guarda a direção de cada coluna
+
+                    function ordenarTabela(coluna) {
+                        const tbody = document.querySelector("tbody");
+                        const linhas = Array.from(tbody.querySelectorAll("tr"));
+
+                        const crescente = !ordemAtual[coluna];
+                        ordemAtual[coluna] = crescente;
+
+                        linhas.sort(function(a, b) {
+                        const celA = a.querySelectorAll("td")[coluna].textContent.trim();
+                        const celB = b.querySelectorAll("td")[coluna].textContent.trim();
+
+                        if (coluna === 1) {
+                            // coluna numérica
+                            const numA = parseInt(celA.replace(/\s/g, ""));
+                            const numB = parseInt(celB.replace(/\s/g, ""));
+                            return crescente ? numA - numB : numB - numA;
+                        } else {
+                            // coluna de texto
+                            return crescente
+                            ? celA.localeCompare(celB, "pt-BR")
+                            : celB.localeCompare(celA, "pt-BR");
+                        }
+                        });
+
+                        linhas.forEach(function(linha) {
+                        tbody.appendChild(linha);
+                        });
+
+                        calcularTotal(); // atualiza o total após ordenar
+                    }
+
+                    // ─── 3. FILTRAR POR NOME ──────────────────────────────────────────────────
+                    document.getElementById("busca").addEventListener("input", function() {
+                        const termo = this.value.toLowerCase();
+                        const linhas = document.querySelectorAll("tbody tr");
+
+                        linhas.forEach(function(linha) {
+                        const nome = linha.querySelector("td").textContent.toLowerCase();
+                        linha.style.display = nome.includes(termo) ? "" : "none";
+                        });
+                    });
+
+                    // ─── INICIALIZAR ──────────────────────────────────────────────────────────
+                    calcularTotal();
+                    </script>
+    
+</body>
+</html>
